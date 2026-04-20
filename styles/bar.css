@@ -1,0 +1,151 @@
+.bar{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -8px;
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.bar__title{
+    font-weight: 500;
+    font-size: 16px; 
+    margin: 32px 0 16px;
+}
+
+.bar__price-input{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 7px 5px;
+    min-width: 0;
+}
+
+.bar__price-input::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    color: #1a212f;
+}
+
+.bar__square-wrapper, .bar__include-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bar__check-block{
+    display: flex;
+    align-items: center;
+}
+
+.bar__check-text{
+    font-weight: 400;
+    font-size: 14px; 
+    margin-left: 10px; 
+}
+
+
+.bar__checker{
+    width: 20px;
+    height: 20px;
+}
+
+.bar__apply{
+    border: 2px solid #fac663;
+    background: #fac663;
+}
+.bar__reset{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: 2px solid #fac663;
+    background: #fff;
+}
+
+.bar__buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bar__buttons button{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px auto 17px;
+    height: 42px;
+}
+@media (min-width: 768px) {
+    .bar{
+        position: static;
+        padding: 20px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 130px auto;
+        justify-items: center;
+    }
+
+    .bar__title{
+        margin: 0 0 16px;
+    }
+
+    .bar__price{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .bar__price-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .bar__price-input{
+        height: 24px;
+    }
+    
+    .bar__buttons{
+        grid-area: 2 / 1 / 3 / 2;
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .bar__buttons button{
+        height: 30px;
+    }
+  
+    .bar__square{
+        grid-area: 1 / 2 / 3 / 3;
+    }
+
+    .bar__include{
+        grid-area: 1 / 3 / 3 / 4;
+    }
+}
+
+@media (min-width:1024px) {
+    .bar{
+        max-width: 211px;
+        max-height: max-content;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .bar__square-wrapper, .bar__include-wrapper{
+        gap: 14px;
+    }
+    .bar__price-wrapper{
+        flex-direction: row;
+        width: 100%;
+    }
+    .bar__buttons{
+        margin-top: 0;
+        gap: 11px;
+    }
+
+    .bar__buttons button{
+        height: 42px;
+        width: 100%;
+    }
+
+}

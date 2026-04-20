@@ -1,0 +1,81 @@
+.card{
+    border-radius: 6px;
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #e1e1e1;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 0 0 25px 0 rgba(208, 208, 208, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image img{
+    width: 100%;
+}
+
+.card__info-wrapper{
+    padding: 25px 20px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card__title{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 20px; 
+    margin-bottom: 20px;
+}
+
+.card__size{
+    margin-bottom: 15px;
+}
+
+.card__include{
+    margin: 15px 0 18px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.card__include-wrapper{
+    display: flex;
+    gap: 8px;
+}
+
+.card__price-value{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card__button{
+    width: 100%;
+    height: 46px;
+    padding: 6px;
+    margin: 25px auto 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fffefd;
+    background: #f05b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+}
+
+.card__button-decoration{
+    position: absolute;
+    right: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    
+}
